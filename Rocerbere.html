@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocerbere - Services Photo et Vidéo</title>
+    <style>
+        /* Styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* Section générique */
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            font-size: 26px;
+            color: #444;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Section Services */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
+            gap: 20px;
+            background-color: #f9f4f8;
+            padding: 30px 0;
+        }
+
+        .service {
+            max-width: 30%;
+            min-width: 280px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .service h2 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .service p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            padding: 10px;
+        }
+
+        /* Section Portfolio */
+        .portfolio {
+            text-align: center;
+        }
+
+        .portfolio-item {
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .portfolio-item img,
+        .portfolio-item iframe {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item img:hover,
+        .portfolio-item iframe:hover {
+            transform: scale(1.02);
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+		
+        .portfolio {
+            background-color: #eaf7ff;
+            padding: 50px 20px;
+        }
+		/* Section Contact */
+        .contact {
+            background-color: #ffeaf0;
+            padding: 50px 20px;
+        }
+  
+        
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section h2 {
+                font-size: 22px;
+            }
+
+            .service h2 {
+                font-size: 18px;
+            }
+
+            .service p {
+                font-size: 14px;
+            }
+
+            .contact p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Rocerbere - Services Photo et Vidéo</h1>
+    </header>
+
+    <!-- Section principale des services -->
+    <section class="services">
+        <div class="service">
+            <img src="https://i.ibb.co/nLbfgS5/image-d-appareil-photo.jpg" alt="image-d-appareil-photo">
+            <h2>Prise de photos pour événements</h2>
+            <p>Vous organisez un événement spécial ? Offrez-vous des images exceptionnelles pour garder ces instants mémorables à jamais.</p>
+        </div>
+        <div class="service">
+            <img src="https://i.ibb.co/kmnbLqP/image-montage-vide-o.webp" alt="image-montage-vide-o">
+            <h2>Montage photo et vidéo</h2>
+            <p>Transformez vos images et vidéos en souvenirs inoubliables avec un montage professionnel. Je m'occupe de créer un rendu dynamique et percutant.</p>
+        </div>
+        <div class="service">
+            <img src="https://i.ibb.co/TbrJ3G3/Image-photo-montage.png" alt="Image-photo-montage">
+            <h2>Prise d'image et montage</h2>
+            <p>Des prises de vues soignées et un montage créatif : je vous propose un service complet pour sublimer chaque instant.</p>
+        </div>
+    </section>
+
+    <!-- Section portfolio -->
+    <section class="portfolio">
+        <h2>Mes réalisations</h2>
+        <div class="portfolio-item">
+            <img src="https://i.ibb.co/c6cPDM0/PHOTO-2024-12-18-19-39-11.jpg" alt="Mannequin portant la marque Ilm créateur">
+            <p>Mannequin portant la marque Ilm créateur</p>
+        </div>
+        <div class="portfolio-item">
+            <iframe src="https://www.youtube.com/embed/UXnsktVrYgM" title="YouTube video player"></iframe>
+            <p>Utilisation des logiciels d'effet</p>
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact">
+        <h2>Contactez-moi</h2>
+        <p>Suivez-moi sur Instagram : <a href="https://www.instagram.com/rocerbere_montage" target="_blank">@rocerbere_montage</a></p>
+        <p>Envoyez-moi un e-mail : <a href="mailto:rocerbere@gmail.com">rocerbere@gmail.com</a></p>
+        <p>Prix variable selon la demande et négociable</p>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 by Rocerbere. All rights reserved.</p>
+    </footer>
+</body>
+</html>
